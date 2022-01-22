@@ -1,18 +1,26 @@
 :root {
   --fondo: #FCF8F5;
+  --color-boton: #dd9d4c;
+  --blanco: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: white;
+  background-color: var(--blanco);
 }
 .contenedor_portada {
   border: 1px solid indigo;
   display: flex;
   height: 75vh;
   justify-content: space-around;
-  background-image: url(../primer-pagina/cafe.jpg);
+  background-image: url(../img/cafe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .color-blanco{
@@ -23,7 +31,7 @@ body {
 }
 
 .boton{
-  background-color: #dd9d4c;
+  background-color: var(--color-boton);
   border: 1px solid brown;
   padding-top: 20px;
   padding-left: 60px;
@@ -31,15 +39,39 @@ body {
   padding-bottom: 10px;
 }
 
+/* Tercera Sección  */
 
 .contenedor__productos {
-  border: 1px solid red;
   display: flex;
-  height: 75vh;
+  height: 100vh;
   justify-content: space-around;
   background-color: var(--fondo);
+  align-items: center;
 }
 
 .contenedor__item {
+  height: 60%; 
+  margin: 2rem;
+  box-shadow: 1px 1px 1px 1px;
+}
 
+.contenedor__imagen_item {
+  background-image: url(../img/card-tres.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 75%;
+}
+
+.contenedor__item:nth-child(1) h2{
+  font-size: 3rem; 
+  margin-bottom: 3rem;
+}
+
+.contenedor__item:nth-child(1) a{
+  background-color: var(--color-boton);
+  color: var(--blanco);
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
