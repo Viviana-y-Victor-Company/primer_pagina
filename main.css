@@ -21,6 +21,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  
 }
 
 .color-blanco{
@@ -37,6 +38,26 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 10px;
+}
+/* Segunda sección */
+.posicionarElementos{
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  
+}
+.ancho{
+  width: 50%;
+
+
+}
+.img-fondo{
+  background-image: url(../img/card-tres.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 75%;
 }
 
 /* Tercera Sección  */
@@ -63,7 +84,7 @@ body {
   height: 75%;
 }
 
-.contenedor__item:nth-child(1) h2{
+.tamanio_de_texto{
   font-size: 3rem; 
   margin-bottom: 3rem;
 }
