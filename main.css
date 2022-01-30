@@ -115,3 +115,51 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
 }
+
+/* Estilos cuarta seccion */
+
+.cuarta-seccion {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cuarta-seccion__contenedor {
+  border: 1px solid red;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+
+.cuarta-seccion__titulo {
+  border: 1px solid blue;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cuarta-seccion__tarjetas {
+  display: flex;
+  height: 50vh;
+}
+
+.cuarta-seccion__tarjeta {
+  margin: 1rem;
+}
+
+.cuarta-seccion__tarjeta-imagen {
+  height: 100%;
+  background-image: url(../img/card-tres.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cuarta-seccion__tarjeta-descripcion {
+
+}
+
+
+/* Fin Estilos cuarta seccion */
