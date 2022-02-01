@@ -23,6 +23,12 @@ body {
   background-position: center center;
   
 }
+
+@media (max-width: 768px) {
+  .contenedor_portada{
+    
+  }
+}
 .primer-fuente{
   color: white;
   font-size: 2rem; 
@@ -31,6 +37,12 @@ body {
 .color-tamanio{
   color: white;
   font-size: 7rem;
+}
+
+@media (max-width: 768px) {
+  .color-tamanio{
+    font-size: 4em;
+  }
 }
 
 .inf-portada{
@@ -179,3 +191,4 @@ body {
 }
 
 /* Fin estilos quinta seccion  */
+
