@@ -119,7 +119,6 @@ body {
 /* Estilos cuarta seccion */
 
 .cuarta-seccion {
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -127,16 +126,19 @@ body {
 }
 
 .cuarta-seccion__contenedor {
-  border: 1px solid red;
   display: flex;
-  margin: 1rem;
+  margin: .5rem;
   flex-direction: column;
+  margin: 2rem 4rem;
+}
+
+.cuarta-seccion p {
+  width: 50%;
 }
 
 
 .cuarta-seccion__titulo {
-  border: 1px solid blue;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -161,5 +163,19 @@ body {
 
 }
 
+.cuarta-seccion__tarjeta-descripcion p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 
 /* Fin Estilos cuarta seccion */
+
+/* Inicio estilos quinta seccion  */
+
+.quinta-seccion {
+  height: 100vh;
+  background-color: purple;
+}
+
+/* Fin estilos quinta seccion  */
