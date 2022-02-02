@@ -1,6 +1,6 @@
 :root {
   --fondo: #FCF8F5;
-  --color-boton: #dd9d4c;
+  --color-boton: #ffee00;
   --blanco: #FFF;
 }
 
@@ -13,9 +13,8 @@ body {
   background-color: var(--blanco);
 }
 .contenedor_portada {
-  border: 1px solid indigo;
   display: flex;
-  height: 100vh;
+  height: 150vh;
   justify-content: space-around;
   background-image: url(../img/cafe.jpg);
   background-size: cover;
@@ -31,12 +30,12 @@ body {
 }
 .primer-fuente{
   color: white;
-  font-size: 2rem; 
+  font-size: 3rem; 
  
 }
 .color-tamanio{
-  color: white;
-  font-size: 7rem;
+  color: yellow;
+  font-size: 8rem;
 }
 
 @media (max-width: 768px) {
@@ -49,21 +48,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 60%;
+  width: 80%;
 }
 
-.color-blanco{
-  color: white
-}
 .boton{
   background-color: var(--color-boton);
+  color: white;
   font-size: 2rem;
+  justify-content: center;
   padding-top: 10px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-bottom: 10px;
-  width: 15%;
   text-transform: uppercase;
+  width: 15%;
 
 }
 
@@ -71,6 +69,7 @@ body {
 /* Segunda sección */
 
 .posicionarElementos{
+  color: black;
   align-items: center;
   display: flex;
   height: 100vh;
@@ -83,7 +82,7 @@ body {
 
 }
 .img-fondo{
-  background-image: url(../img/card-tres.jpg);
+  background-image: url(../img/caffe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
