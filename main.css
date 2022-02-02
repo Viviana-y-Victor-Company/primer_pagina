@@ -14,18 +14,17 @@ body {
 }
 .contenedor_portada {
   display: flex;
-  height: 150vh;
+  height: 100vh;
   justify-content: space-around;
   background-image: url(../img/cafe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .contenedor_portada{
-    
+    height: 30vh;
   }
 }
 .primer-fuente{
@@ -33,14 +32,20 @@ body {
   font-size: 3rem; 
  
 }
+@media (max-width: 360px) {
+  .primer-fuente{
+    font-size: 1rem;
+  }
+}
+
 .color-tamanio{
   color: yellow;
   font-size: 8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .color-tamanio{
-    font-size: 4em;
+    font-size: 2.5rem;
   }
 }
 
@@ -53,14 +58,21 @@ body {
 
 .boton{
   background-color: var(--color-boton);
-  color: white;
+  color: brown;
   font-size: 2rem;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
   width: 15%;
+}
 
+@media (max-width: 360px) {
+  .boton{
+    font-size: 0.5rem;
+    width: 50%;
+
+  }
 }
 
 
