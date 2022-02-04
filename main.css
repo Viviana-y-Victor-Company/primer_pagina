@@ -19,14 +19,18 @@ body {
   height: 100vh;
   justify-content: space-around;
   background-image: url(../img/cafe.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: 10% 10% 10px center 50px;
+  /* background: blue url(../img/cafe.jpg) center center cover no-repeat fixed; */
 }
 
 @media (max-width: 480px) {
   .contenedor_portada{
     height: 50vh;
+    background-attachment: unset;
   }
 }
 .primer-fuente{
@@ -73,6 +77,12 @@ body {
   width: 15%;
 }
 
+@media (max-width: 768px) {
+  .boton{
+    width: 50%;
+  }
+}
+
 @media (max-width: 480px) {
   .boton{
     font-size: 0.5rem;
@@ -91,6 +101,10 @@ body {
   height: 100vh;
   justify-content: center;
   margin-bottom: 1.7rem;
+}
+
+.posicionarElementos .ancho p {
+  font-size: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -115,6 +129,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   height: 75%;
+  border-radius: 10px;
 }
 
 
@@ -159,7 +174,7 @@ body {
 }
 
 .tamanio_de_texto{
-  font-size: 3rem; 
+  font-size: 3.5rem; 
   margin-bottom: 3rem;
 }
 
@@ -180,11 +195,13 @@ body {
 /* Estilos cuarta seccion */
 
 .cuarta-seccion {
-  height: auto;
+  /* height: auto; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--cremita);
+  border: 1px solid red;
 }
 
 .cuarta-seccion__contenedor {
@@ -192,7 +209,8 @@ body {
   margin: .5rem;
   flex-direction: column;
   margin: 2rem 4rem;
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
 }
 
 @media (max-width: 480px) {
@@ -234,6 +252,8 @@ body {
 
 .cuarta-seccion__tarjeta {
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 480px) {
@@ -248,12 +268,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 50%;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 480px) {
   .cuarta-seccion__tarjeta-imagen{
-    height:50vh;
+    /* height:50vh; */
   }
 }
 
@@ -277,4 +298,6 @@ body {
 }
 
 /* Fin estilos quinta seccion  */
+
+
 
