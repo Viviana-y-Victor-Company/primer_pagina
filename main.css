@@ -1,8 +1,9 @@
 :root {
   --fondo: #FCF8F5;
-  --color-boton: #ffee00;
+  --color-boton: #F2B705;
   --blanco: #FFF;
   --cremita: #FCF8F5;
+  --fuente_pacifico:'Pacifico', cursive;
 }
 
 * {
@@ -30,23 +31,27 @@ body {
 }
 .primer-fuente{
   color: white;
-  font-size: 3rem; 
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px black;
+  font-family: var(--fuente_pacifico); 
+  text-transform: lowercase;
  
 }
 @media (max-width: 480px) {
   .primer-fuente{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 .color-tamanio{
   color: yellow;
   font-size: 8rem;
+  text-shadow: 2px 2px 2px black;
 }
 
 @media (max-width: 480px) {
   .color-tamanio{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -85,18 +90,24 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
-  
+  margin-bottom: 1.7rem;
 }
 
 @media (max-width: 480px) {
   .posicionarElementos{
     flex-direction: column;
+    
   }
 }
 .ancho{
   width: 50%;
-
-
+  margin: 2rem;
+}
+@media (max-width: 480px) {
+  .ancho{
+    margin: 1rem;
+    width: 80%;
+  }
 }
 .img-fondo{
   background-image: url(../img/caffe.jpg);
@@ -237,6 +248,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 50%;
 }
 
 @media (max-width: 480px) {
