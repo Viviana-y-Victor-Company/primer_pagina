@@ -106,13 +106,22 @@ body {
 .posicionarElementos .ancho p {
   font-size: 2rem;
 }
-
-@media (max-width: 480px) {
-  .posicionarElementos{
-    flex-direction: column;
+@media (max-width: 768px) {
+  .posicionarElementos .ancho p{
+    font-size: 1.5rem;
     
   }
 }
+
+@media (max-width: 480px) {
+  .posicionarElementos {
+    flex-direction: column;
+  }
+  .posicionarElementos .ancho p{
+    font-size: 1rem; 
+  }
+}
+
 .ancho{
   width: 50%;
   margin: 2rem;
@@ -126,12 +135,22 @@ body {
 .img-fondo{
   background-image: url(../img/caffe.jpg);
   background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 10% 10% 10px center 50px;
   height: 75%;
   border-radius: 10px;
 }
-
+@media (max-width: 768px) {
+  .img-fondo{
+    height: 45vh;
+  }
+}
+@media (max-width: 480px) {
+  .img-fondo{
+    height: 80vh;
+  }
+}
 
 /* Tercera Sección  */
 
@@ -181,6 +200,7 @@ body {
 @media (max-width: 480px) {
   .tamanio_de_texto {
     text-align: center;
+    font-size: 3rem; 
   }
 }
 
