@@ -156,24 +156,45 @@ body {
 
 .contenedor__productos {
   display: flex;
-  height: 100vh;
   justify-content: space-around;
   background-color: var(--fondo);
   align-items: center;
+  background-color: #F2B9AC;
+  height: auto;
 }
 
 @media (max-width: 480px) {
   .contenedor__productos {
     flex-direction: column;
-    height: auto;
+    /* height: auto; */
   }
 }
 
-
 .contenedor__item {
-  height: 60%; 
+  /* height: 60%;  */
   margin: 2rem;
-  box-shadow: 1px 1px 1px 1px;
+  width: 25%;
+  display: flex;
+  flex-direction: column
+}
+
+.contenedor__item:nth-child(1) {
+  justify-content: center;
+}
+
+.contenedor__item:nth-child(1) h2 {
+  font-size:2em;
+  text-align: center;
+}
+
+.contenedor__item:nth-child(1) a{
+  background-color: var(--color-boton);
+  color: var(--blanco);
+  padding: .5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: auto;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -181,15 +202,13 @@ body {
     flex-direction: column;
     display: flex;
     text-align: center;
+    width: auto;
   }
 }
 
-.contenedor__imagen_item {
-  background-image: url(../img/card-tres.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 75%;
+.contenedor__imagen_item img {
+  width: 100%;
+  height: auto;
 }
 
 .tamanio_de_texto{
@@ -204,24 +223,21 @@ body {
   }
 }
 
-.contenedor__item:nth-child(1) a{
-  background-color: var(--color-boton);
-  color: var(--blanco);
-  padding: 1rem;
-  text-decoration: none;
-  font-size: 1.2rem;
+.contenedor__item div:nth-child(2) span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.contenedor__item div:nth-child(2) p{
+  font-size: 1.2em;
 }
 
 /* Estilos cuarta seccion */
 
 .cuarta-seccion {
-  /* height: auto; */
-  height: 100vh;
+  /* background-color: var(--cremita); */
+  /* height: 100vh; */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--cremita);
-  border: 1px solid red;
+  align-items: center;
 }
 
 .cuarta-seccion__contenedor {
@@ -230,7 +246,8 @@ body {
   flex-direction: column;
   margin: 2rem 4rem;
   /* height: 100vh; */
-  height: auto;
+  height: 100%;
+  border: 1px solid black;
 }
 
 @media (max-width: 480px) {
@@ -247,7 +264,7 @@ body {
 
 
 .cuarta-seccion__titulo {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -284,10 +301,16 @@ body {
 
 .cuarta-seccion__tarjeta-imagen {
   height: 100%;
-  background-image: url(../img/card-tres.jpg);
+  /* background-image: url(../img/card-tres.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
+  /* width: 50%; */
+  height: auto;
+  background-color: orange;
+}
+
+.cuarta-seccion__tarjeta-imagen img {
   width: 100%;
   height: auto;
 }
