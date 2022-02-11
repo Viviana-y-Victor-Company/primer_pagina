@@ -336,11 +336,53 @@ body {
 /* Inicio estilos quinta seccion  */
 
 .quinta-seccion {
-  height: 100vh;
-  background-color: purple;
+  background-color: darkblue;
 }
 
 /* Fin estilos quinta seccion  */
 
+.quinta-seccion-bg {
+  border: 1px solid red;
+  background-image: url(../img/cafe2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: 10% 10% 10px center 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.quinta-seccion-titulo {
+  color: white;
+  font-size: 3.4rem;
+  height: 20%;
+}
 
+.quinta-seccion-direcciones {
+  display: flex;
+  border: 1px solid yellow;
+  height: 50%;
+  color: whitesmoke;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quinta-seccion-direccion {
+  border: 1px solid red;
+
+}
+
+.quinta-seccion-direccion p {
+  font-size: 1.3rem;
+}
+
+.quinta-seccion-bg-footer {
+  border: 1px solid black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: .5rem;
+}
