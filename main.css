@@ -159,7 +159,7 @@ body {
   justify-content: space-around;
   background-color: var(--fondo);
   align-items: center;
-  background-color: #F2B9AC;
+  background-color: #fdf3df;
   height: auto;
 }
 
@@ -247,7 +247,6 @@ body {
   margin: 2rem 4rem;
   /* height: 100vh; */
   height: 100%;
-  border: 1px solid black;
 }
 
 @media (max-width: 480px) {
@@ -342,41 +341,41 @@ body {
 /* Fin estilos quinta seccion  */
 
 .quinta-seccion-bg {
-  border: 1px solid red;
-  background-image: url(../img/cafe2.jpg);
+  background-image: url(../img/cafee.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #000;
   background-position: 10% 10% 10px center 50px;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
 }
 
 .quinta-seccion-titulo {
-  color: white;
+  color: #0a0a0afa;
   font-size: 3.4rem;
-  height: 20%;
+  font-weight: bold;
+  height: 10%;
 }
 
 .quinta-seccion-direcciones {
   display: flex;
-  border: 1px solid yellow;
-  height: 50%;
+  height: 30%;
   color: whitesmoke;
   justify-content: space-around;
   align-items: center;
 }
 
 .quinta-seccion-direccion {
-  border: 1px solid red;
-
+  color:rgb(10, 10, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .quinta-seccion-direccion p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .quinta-seccion-bg-footer {
