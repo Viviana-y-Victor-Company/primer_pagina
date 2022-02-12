@@ -244,7 +244,7 @@ body {
   display: flex;
   margin: .5rem;
   flex-direction: column;
-  margin: 2rem 4rem;
+  margin: 2rem 1rem;
   /* height: 100vh; */
   height: 100%;
 }
@@ -258,12 +258,13 @@ body {
 }
 
 .cuarta-seccion p {
-  width: 50%;
+  /* width: 50%; */
+  text-align: center;
 }
 
 
 .cuarta-seccion__titulo {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -347,13 +348,13 @@ body {
 /* Inicio estilos quinta seccion  */
 
 .quinta-seccion {
-  background-color: darkblue;
+  background-color: var(--color-boton);
 }
 
 /* Fin estilos quinta seccion  */
 
 .quinta-seccion-bg {
-  background-image: url(../img/cafee.jpg);
+  background-image: url(../img/cuarta.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #000;
@@ -412,4 +413,15 @@ body {
   color: white;
   justify-content: space-between;
   padding: .5rem;
+}
+
+.quinta-seccion-bg-footer p {
+  text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 480px) {
+  .quinta-seccion-bg-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
